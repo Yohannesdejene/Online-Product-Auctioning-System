@@ -1,2 +1,2 @@
 # FinalYearProdject
- This is the final year prodject Online Bidding System
+ This is the final year project Online Bidding System
