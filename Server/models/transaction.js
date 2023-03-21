@@ -1,0 +1,37 @@
+'use strict';
+const {
+  Model
+} = require('sequelize');
+const auction = require('./auction');
+module.exports = (sequelize, DataTypes) => {
+  class Transaction extends Model {
+    /**
+     * Helper method for defining associations.
+     * This method is not a part of Sequelize lifecycle.
+     * The `models/index` file will call this method automatically.
+     */
+    static associate({Auction,Buyer}) {
+      Transaction.belongsTo(Auction)
+      Transaction.belongsTo(Buyer)
+      // define association here
+    }
+  }
+  Transaction.init({
+    id:{
+      type: DataTypes.STRING,
+      primaryKey:true
+    },
+    amount:{
+      type:DataTypes.DOUBLE,
+      
+    },
+    date:{
+      type:DataTypes.DATE,
+      allowNull:false
+    }
+  }, {
+    sequelize,
+    modelName: 'Transaction',
+  });
+  return Transaction;
+};
