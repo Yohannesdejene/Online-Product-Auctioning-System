@@ -1,0 +1,122 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  height:100vh;
+  /* 
+  background-color: blanchedalmond; */
+}
+.formdiv{
+    margin-bottom: 20px; 
+  
+}
+.totalForm {
+  width: 295px;
+  padding-top: 15px;
+}
+.header {
+  margin-top: 0px;
+}
+.commonForm {
+  display: flex;
+  flex-direction: column;
+}
+.additionalForm {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  height: 35px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 8px;
+  
+}
+input{
+text-align: center;
+}
+
+.personType {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  width: 100%;
+}
+.sellbuy {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.personTypeRadio {
+    
+}
+
+.submitButton {
+  height: 35px;
+  width: 290px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: rgb(215, 215, 215);
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10%;
+    /* 
+        background-color: blanchedalmond; */
+  }
+  .totalForm {
+    width: 295px;
+    padding-top: 15px;
+  }
+  .header {
+    margin-top: 0px;
+  }
+  .commonForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .additionalForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .input {
+    height: 35px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 8px;
+  }
+
+  .personType {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    width: 100%;
+  }
+  .sellbuy {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .personTypeRadio {
+  }
+  .submitButton {
+    height: 35px;
+    width: 290px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: rgb(215, 215, 215);
+    border-radius: 15px;
+  }
+}
