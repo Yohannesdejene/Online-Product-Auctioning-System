@@ -1,3 +1,4 @@
+const {uid}=require('uid'); 
 'use strict';
 const {
   Model
@@ -16,6 +17,12 @@ module.exports = (sequelize, DataTypes) => {
   }
   Seller.init({
     id: {
+      set(value) {
+        let x=uid(16);
+        // Storing passwords in plaintext in the database is terrible.
+        // Hashing the value with an appropriate cryptographic hash function is better.
+        this.setDataValue('id', x);
+      },
       type:DataTypes.STRING,
       primaryKey:true,
       
