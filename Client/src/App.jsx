@@ -58,9 +58,9 @@ function App() {
           <Route path="/liveauction" element={<LiveAuction />} />
 
           {/* ### admin routes */}
-          {/* <Route path="/deleteauction" element={<DeleteAuction />} />
+          <Route path="/deleteauction" element={<DeleteAuction />} />
           <Route path="/deleteuser" element={<DeleteUser />} />
-          <Route path="/*" element={<NotFound />} /> */}
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
