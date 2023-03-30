@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./Nav.css";
-function Nav() {
+import "./NavBar.css";
+function NavBar() {
   return (
     <div>
       <div className="nav">
@@ -8,9 +8,7 @@ function Nav() {
           <img src="air.jpg" alt="images_place" />
         </div>
         <div className="navright">
-          <h3 className="signup">
-         Signup
-          </h3>
+          <h3 className="signup">Signup</h3>
           <h3 className="signin">Log in</h3>
         </div>
       </div>
@@ -18,4 +16,4 @@ function Nav() {
     </div>
   );
 }
-export default Nav;
+export default NavBar;
